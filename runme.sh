@@ -51,12 +51,12 @@ alias rip-breaks='screen -d -m streamripper http://online.radiorecord.ru:8102/br
 export EDITOR='vim'
 
 " | sudo -u dragutsan tee -a ~dragutsan/.bashrc
-        . ~dragutsan/.bashrc
+        sudo -u dragutsan source ~dragutsan/.bashrc
     fi
 
     sudo apt update
     sudo apt list --upgradable
     sudo apt upgrade -y
-    sudo apt install -y policycoreutils python3-pip nfs-common mlocate bash-completion net-tools dnsutils telnet whois screen mc lsof strace tcpdump vim git htop atop sysstat psmisc nmon nload iftop iptraf-ng wget curl unzip
+    sudo apt install -y policycoreutils python3-pip nfs-common mlocate bash-completion net-tools dnsutils telnet whois screen mc lsof strace tcpdump vim git htop atop sysstat psmisc nmon nload iftop iptraf-ng wget curl unzip terminator guake copyq
     echo "we are done"
 fi
