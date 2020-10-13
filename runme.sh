@@ -42,6 +42,8 @@ alias bro='ssh -p2222 brokenport@127.0.0.1'
 alias bestp='ssh root@192.168.1.101'
 
 alias rip-breaks='screen -d -m streamripper http://online.radiorecord.ru:8102/brks_320 -d ~/Music/ -L ~/Music/Breaks.pls -M 1000 -u \"USER AGENT\" -T'
+
+export EDITOR='vim'
 " >> ~/.bashrc
     . ~/.bashrc
     
