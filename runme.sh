@@ -50,7 +50,7 @@ alias rip-breaks='screen -d -m streamripper http://online.radiorecord.ru:8102/br
 
 export EDITOR='vim'
 
-" | tee -a ~dragutsan/.bashrc
+" | sudo -u dragutsan tee -a ~dragutsan/.bashrc
         . ~dragutsan/.bashrc
     fi
 
