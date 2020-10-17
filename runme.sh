@@ -57,6 +57,6 @@ export EDITOR='vim'
     sudo apt update
     sudo apt list --upgradable
     sudo apt upgrade -y
-    sudo apt install -y policycoreutils python3-pip nfs-common mlocate bash-completion net-tools dnsutils telnet whois screen mc lsof strace tcpdump vim git htop atop sysstat psmisc nmon nload iftop iptraf-ng wget curl unzip terminator guake copyq
+    sudo apt install -y policycoreutils python3-pip nfs-common mlocate bash-completion net-tools dnsutils telnet whois screen mc lsof strace tcpdump vim git htop atop sysstat psmisc nmon nload iftop iptraf-ng wget curl unzip terminator guake copyq proxuchains proxychains4
     echo "we are done"
 fi
