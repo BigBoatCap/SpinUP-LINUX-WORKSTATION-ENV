@@ -1,0 +1,10 @@
+[user]
+	email = dragutsan.alexandr@gmail.com
+	name = brokenport
+[urer]
+	name = brokenport
+[core]
+	editor = vim
+	fileMode = false
+[http]
+	sslVerify = false

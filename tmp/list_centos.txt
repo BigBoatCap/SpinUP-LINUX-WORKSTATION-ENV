@@ -1,0 +1,41 @@
+          - open-vm-tools
+          - epel-release
+          - policycoreutils-python
+          - yum-utils
+          - yum-cron
+          - yum-plugin-fastestmirror
+          - iptables-services
+          - nfs-utils
+          - rsyslog
+          - rsyslog-gnutls
+          - ipa-client
+          - zabbix-agent
+          - mlocate
+          - bash-completion
+          - net-tools
+          - bind-utils
+          - telnet
+          - whois
+          - screen
+          - mc
+          - lsof
+          - strace
+          - tcpdump
+          - vim
+          - git
+          - sysstat
+          - psmisc
+          - iptraf-ng
+          - wget
+          - curl
+          - python36-pip
+          - htop
+          - atop
+          - nmon
+          - nload
+          - iftop
+          - zip
+          - unzip
+
+
+policycoreutils python3-pip nfs-common mlocate bash-completion net-tools dnsutils telnet whois screen mc lsof strace tcpdump vim git htop atop sysstat psmisc nmon nload iftop iptraf-ng wget curl zip unzip
