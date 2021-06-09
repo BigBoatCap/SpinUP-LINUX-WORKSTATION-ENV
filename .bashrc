@@ -92,23 +92,6 @@ alias ll='ls -alFt'
 alias la='ls -A'
 alias l='ls -CF'
 
-#### C U S T O M   A L I A S E S \customal####
-#alias ls="sudo ls -lah --color=always --classify"
-alias lsd="sudo ls -lahd --color=auto --classify"
-alias netstat="sudo netstat -pan --ip -c"
-alias htop="sudo htop"
-alias update="sudo apt update; apt list --upgradable"
-alias upgrade="sudo apt upgrade -y"
-alias install="sudo apt install"
-alias remove="sudo apt remove"
-alias search="apt-cache search"
-alias ps="sudo ps auxf | less"
-alias dig="dig +short any"
-#do not rewrite existing:
-alias mv="mv -n"
-alias rm="rm -i"
-alias wh="whereis"
-#alias cod="echo +100500"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -135,30 +118,52 @@ if ! shopt -oq posix; then
 fi
 
 
-# Git SSL DO NOT CHECK
-git config --global core.fileMode false
-git config --global http.sslVerify false
-
-shopt -s dotglob nullglob
+##############################################################################
 #### C U S T O M   A L I A S E S ####
+##############################################################################
+#
+# bash environment
+# coreutils
+# etc. localhost terminal workflow presets
+#
 alias lsd='sudo ls -lahd --color=auto --classify'
-alias netstat='sudo netstat -pan --ip -c'
 alias htop='sudo htop'
-alias upgrade='sudo apt upgrade -y'
-alias install='sudo apt install'
-alias remove='sudo apt remove'
-alias search='apt-cache search'
-alias ps='sudo ps auxf | less'
-alias dig='dig \+short any'
-
+alias update="sudo apt update; apt list --upgradable"
+alias upgrade="sudo apt upgrade -y"
+alias install="sudo apt install"
+alias remove="sudo apt remove"
+alias search="apt-cache search"
+alias ps="sudo ps auxf | less"
+#do not rewrite existing:
+alias mv="mv -n"
+alias rm="rm -i"
+alias wh="whereis"
+#
+# networking
+#
+alias netstat='sudo netstat -pan --ip -c'
 alias vm='ssh -p2222 root@127.0.0.1'
 alias vmoff='ssh -p2222 root@127.0.0.1 poweroff'
 alias bro='ssh -p2222 brokenport@127.0.0.1'
 alias bestp='ssh root@192.168.1.101'
-
+alias dig="dig +short any"
+#
+# custom apps
+#
 alias rip-breaks='screen -d -m streamripper http://online.radiorecord.ru:8102/brks_320 -d ~/Music/ -L ~/Music/Breaks.pls -M 1000 -u USER AGENT -T'
+##############################################################################
+####   E N D  C U S T O M   A L I A S E S ####
+##############################################################################
+#
+##############################################################################
+#
+# environment variables section
+#
+# Git SSL DO NOT CHECK
+# git config --global core.fileMode false
+# git config --global http.sslVerify false
+# Repo should always have SSL
 
 export EDITOR='vim'
-
-
 export PROMPT_COMMAND='history -a'
+shopt -s dotglob nullglob
