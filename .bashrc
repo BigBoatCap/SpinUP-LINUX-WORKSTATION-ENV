@@ -161,3 +161,4 @@ alias rip-breaks='screen -d -m streamripper http://online.radiorecord.ru:8102/br
 export EDITOR='vim'
 
 
+export PROMPT_COMMAND='history -a'
